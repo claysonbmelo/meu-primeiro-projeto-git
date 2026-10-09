@@ -1,0 +1,153 @@
+* {
+    font-family: "Poppins", sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    margin-top: 47px;
+    margin-left: 42px;
+    display: flex;
+    /* Transforma o header em flexbox */
+    align-items: center;
+    /* Alinha o texto e a imagem perfeitamente na mesma linha horizontal */
+    /*justify-content: flex-end; /* Empurra todos os elementos para o canto direito da tela */
+    gap: 24px;
+    /* Cria um espaçamento uniforme entre cada link e o botão */
+    padding: 20px;
+}
+
+.link-header {
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 100%;
+    color: #17233D;
+    cursor: pointer;
+    margin-right: 23px;
+
+}
+
+.img-header {
+    width: 124px;
+    height: 51px;
+    cursor: pointer;
+
+}
+
+.congratulation-foto {
+    width: 595px;
+    height: 500px;
+    top: 163px;
+    left: 121px;
+    display: inline-block;
+
+}
+
+section {
+    display: inline-block;
+    margin-left: 80px;
+
+}
+
+.h1-main {
+    width: 582px;
+    height: 164px;
+    font-weight: 700;
+    font-size: 62px;
+    line-height: 82px;
+    color: #161a40;
+
+}
+
+.paragrafo-main {
+    width: 493px;
+    height: 99px;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 33px;
+    color: #4b505a;
+    margin-top: 47px;
+    margin-bottom: 55px;
+}
+
+.link-main {
+    width: 112px;
+    height: 27px;
+    border-radius: 8px;
+    color: #6fbf44;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 100%;
+    cursor: pointer;
+
+}
+
+@media screen and (max-width: 890px) {
+    header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 15px 20px;
+        padding: 0;
+    }
+
+    .link-header {
+        display: none;
+    }
+
+    .img-header {
+
+        position: absolute;
+        top: 15px;
+        right: 20px;
+        display: block;
+    }
+
+    section {
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+
+    .h1-main {
+
+        width: 100%;
+        font-size: 42px;
+        line-height: 1.2;
+        margin-bottom: 25px;
+
+    }
+
+    .paragrafo-main {
+        width: 100%;
+        max-width: 500px;
+        font-size: 16px;
+        line-height: 1.6;
+        margin-bottom: 25px;
+
+    }
+
+    .link-main {
+        margin-bottom: 30px;
+    }
+
+    .congratulation-foto {
+
+        width: 100%;
+        max-width: 595px;
+        height: auto;
+    }
+
+    .conteudo {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .congratulation-foto {
+        display: block;
+    }
+}
